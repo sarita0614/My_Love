@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>¿Quieres ser mi novio?</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; background-color: #fff0f5; }
+    button { margin: 20px; padding: 10px 20px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>¿Quieres ser mi novio? 💖</h1>
+  <button onclick="respuesta('si')">Sí 😍</button>
+  <button onclick="respuesta('no')">No 😢</button>
+  <div id="mensaje"></div>
+  <script>
+    function respuesta(opcion) {
+      const mensaje = document.getElementById("mensaje");
+      if (opcion === 'si') {
+        mensaje.innerHTML = "<h2>¡Yay! 💘 Me haces muy feliz 💫</h2>";
+      } else {
+        mensaje.innerHTML = "<h2>Está bien 💛 Gracias por tu sinceridad.</h2>";
+      }
+    }
+  </script>
+</body>
+</html>
