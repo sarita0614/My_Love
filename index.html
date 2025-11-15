@@ -1,25 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>¿Quieres ser mi novio?</title>
+  <meta charset="UTF-8">
+  <title>Feliz cumpleaños, mi amor 💖</title>
   <style>
-    body { text-align: center; font-family: sans-serif; background-color: #fff0f5; }
-    button { margin: 20px; padding: 10px 20px; font-size: 18px; }
+    body {
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: #4b2e2e;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #d63384;
+    }
+    .mensaje {
+      margin-top: 20px;
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    button {
+      background-color: #ff99c8;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 20px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #ff66a3;
+    }
+    #extra {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.1em;
+      color: #6b4c4c;
+    }
   </style>
 </head>
 <body>
-  <h1>¿Quieres ser mi novio? 💖</h1>
-  <button onclick="respuesta('si')">Sí 😍</button>
-  <button onclick="respuesta('no')">No 😢</button>
-  <div id="mensaje"></div>
+  <h1>🎂 Feliz cumpleaños, amor 💕</h1>
+
+  <div class="mensaje">
+    Hoy cumples 19 años, y aunque no sé si estás tan presente en tu futuro como antes lo soñábamos juntos, quiero regalarte este pedacito de mí.  
+    Has cambiado, sí... a veces siento que te pierdes en ti mismo, que te olvidas de lo que me duele, que no estoy en tus prioridades.  
+    Pero también sé que tienes una dulzura que me hace bien, que tus detalles me hacen sonreír, que tu forma de mirarme aún me toca el alma.  
+    No sé qué somos ahora, ni qué seremos mañana. Pero hoy, quiero decirte que te quiero. Que me importas. Que aunque me duela, no me arrepiento de haberte ayudado a crecer.  
+    Porque eso hacen las personas que aman: dan sin esperar, aunque a veces duela.  
+  </div>
+
+  <button onclick="mostrar()">💌 Ver mi deseo para ti</button>
+
+  <div id="extra">
+    Que este año te traiga claridad, humildad, y amor verdadero.  
+    Que nunca olvides quién estuvo contigo cuando nadie más lo hizo.  
+    Que seas feliz, incluso si no es conmigo.  
+    Y que si algún día vuelves a mirar atrás... recuerdes que aquí hubo alguien que te quiso de verdad.  
+    <br><br>
+    🎈 Feliz 19, mi niño. Con cariño... tu casi siempre.
+  </div>
+
   <script>
-    function respuesta(opcion) {
-      const mensaje = document.getElementById("mensaje");
-      if (opcion === 'si') {
-        mensaje.innerHTML = "<h2>¡Yay! 💘 Me haces muy feliz 💫</h2>";
-      } else {
-        mensaje.innerHTML = "<h2>Está bien 💛 Gracias por tu sinceridad.</h2>";
-      }
+    function mostrar() {
+      document.getElementById("extra").style.display = "block";
     }
   </script>
 </body>
